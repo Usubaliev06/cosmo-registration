@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Orbitron:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="registration">
+
+    <h1 id="title">Вход на сервер</h1>
+
+    <input type="text" id="name" class="input-name">
+
+    <p class="text-error1">Имя слишком короткое</p>
+    <p class="text-error2">Имя должно начинаться с маленкой буквы</p>
+    <p class="text-error3">Имя не должно содержать пробелов</p>
+
+    <form class="status-wrapper" id="status">
+      <div class="radio-wrapper">
+        <input type="radio" name="status" value="1" class="radio" id="status1">
+        <label for="status1">Игрок</label>
+      </div>
+
+      <div class="radio-wrapper">
+        <input type="radio" name="status" value="2" class="radio" id="status2">
+        <label for="status2">Модератор<label>
+      </div>
+
+      <div class="radio-wrapper">
+        <input type="radio" name="status" value="3" class="radio" id="status3">
+        <label for="status3">Наблюдатель</label>
+      </div>
+    </form>
+
+    <button>ВХОД</button>
+
+    <p class="successfully">Авторизация успешна!</p>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
